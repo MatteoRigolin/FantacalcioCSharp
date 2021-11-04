@@ -1,0 +1,7 @@
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\bin\Debug\Fantacalcio.exe.config
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\bin\Debug\Fantacalcio.exe
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\bin\Debug\Fantacalcio.pdb
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\obj\Debug\Fantacalcio.csproj.AssemblyReference.cache
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\obj\Debug\Fantacalcio.csproj.CoreCompileInputs.cache
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\obj\Debug\Fantacalcio.exe
+E:\4F 2021-2022\Visual studio\Fantacalcio\Fantacalcio\obj\Debug\Fantacalcio.pdb
