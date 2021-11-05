@@ -13,11 +13,26 @@ namespace Fantacalcio
         {
             this.giocatori = giocatori;
         }
-        //public List<Giocatore> setGiocatori()
-        //{
-            
-        //    return giocatori;
-        //}
+        public List<Giocatore> creaGiocatori()
+        {
+            int numeroGiocatori;
+            string nomeGiocatore;
+            Console.WriteLine("Puoi scegliere tra tre modalità:\n2 giocatori\n4 giocatori\n8 giocatori");
+            Console.WriteLine("Inserisci il numero di giocatori:\n ");
+            numeroGiocatori = Convert.ToInt32(Console.ReadLine());
+            while (numeroGiocatori != 2 || numeroGiocatori != 4 || numeroGiocatori != 8)
+            {
+                Console.WriteLine("Devi inserire solo 2, 4 o 8");
+                numeroGiocatori = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < numeroGiocatori; i++)
+            {
+                Console.WriteLine("Inserisci il nome del giocatore {0}", i + 1);
+                nomeGiocatore = Console.ReadLine();
+                giocatori.Add(new Giocatore(nomeGiocatore, 500, 0, 0));
+            }
+            return giocatori;
+        }
         public void asta()
         {
             
@@ -48,7 +63,6 @@ namespace Fantacalcio
         }
         public string setNomeGiocatore()
         {
-            nome = Console.ReadLine();
             return nome;
         }
         public void setRosa()
@@ -87,7 +101,7 @@ namespace Fantacalcio
             this.prezzo = prezzo;
             this.voto = voto;
         }
-        public int setVotoGiocatore()
+        public int setVotoCalciatore()
         {
             return voto;
         }
@@ -96,25 +110,41 @@ namespace Fantacalcio
     {
         static void Main(string[] args)
         {
+            menù();          
+            Console.ReadKey();
+        }
+        static void menù()
+        {
             Console.WriteLine("Benvenuto nel simulatore di fantacalcio");
-            Console.WriteLine("Puoi scegliere tra tre modalità:\n2 giocatori\n4 giocatori\n8 giocatori");
-            Console.WriteLine("Inserisci il numero di giocatori:\n ");
-            int numeroGiocatori;
-            numeroGiocatori = Convert.ToInt32(Console.ReadLine());
-            while (numeroGiocatori == 2 || numeroGiocatori == 4 || numeroGiocatori == 8)
+            Console.WriteLine("Menù\n");
+            Console.WriteLine("Inserisci 1 per iniziare un nuovo campionato\n");
+            Console.WriteLine("Inserisci 2 per continuare un campionato esistente\n");
+            Console.WriteLine("Inserisci 3 per uscire dal programma\n");
+            string numeroMenù = Console.ReadLine(); //assunzione valore da tastiera
+            while (numeroMenù != "1" && numeroMenù != "2" && numeroMenù != "3")
             {
-                Console.WriteLine("Devi inserire solo 2, 4 o 8");
-                numeroGiocatori = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Il valore inserito non è valido, reinserire il valore: ");
+                numeroMenù = Console.ReadLine();
             }
+            //selezione menù
+            switch (numeroMenù)
+            {
+                case "1": nuovoCampionato(); break;
+                case "2": caricaCampionato();  break;
+                case "3": Environment.Exit(1); break;
+            }
+
+        }
+        static void nuovoCampionato()
+        {          
             List<Giocatore> giocatori = new List<Giocatore>();
             Fantacalcio fantacalcio = new Fantacalcio(giocatori);
-            for (int i = 0; i < numeroGiocatori; i++)
-            {
-                Console.WriteLine("Inserisci il nome del giocatore {0}", i + 1);
-                giocatori.Add(new Giocatore("", 500, 0, 0));
+            fantacalcio.creaGiocatori();
+            fantacalcio.asta();
+        }
+        static void caricaCampionato()
+        {
 
-            }
-            Console.ReadKey();
         }
     }
 }
