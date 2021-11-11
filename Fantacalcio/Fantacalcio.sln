@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31402.337
+VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fantacalcio", "Fantacalcio\Fantacalcio.csproj", "{37BBB50D-6311-4669-A6D6-ABBC7DF7313C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fantacalcio", "Fantacalcio\Fantacalcio.csproj", "{C68FECD9-8C0F-48A5-A7D4-5028EB875947}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{37BBB50D-6311-4669-A6D6-ABBC7DF7313C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37BBB50D-6311-4669-A6D6-ABBC7DF7313C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37BBB50D-6311-4669-A6D6-ABBC7DF7313C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37BBB50D-6311-4669-A6D6-ABBC7DF7313C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68FECD9-8C0F-48A5-A7D4-5028EB875947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68FECD9-8C0F-48A5-A7D4-5028EB875947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68FECD9-8C0F-48A5-A7D4-5028EB875947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68FECD9-8C0F-48A5-A7D4-5028EB875947}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F0C64BFD-4CEF-4619-9146-D7E0707D09BB}
+		SolutionGuid = {05D6D95B-F8BF-4F00-B2E0-9C6AC76F8F3C}
 	EndGlobalSection
 EndGlobal
